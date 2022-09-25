@@ -10,24 +10,39 @@ body {
     background:linear-gradient(to right, #2980b9, #2c3e50);
     font-family: Poppins;
     font-weight: 500;
-    height: 100vh;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 img {
     height: 780px;
-    width: 450px;
+    width: 510px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    font-family: ;
+}
+
+.banner-img {
+    height: 200px;
+    width: 150px;
 }
 
 .content p {
     padding: 10px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .italic {
@@ -35,21 +50,26 @@ img {
 }
 
 .log {
-    color: #02dd65;
+    color: #29ca29;
 }
 
 fieldset {
-    height: 500px;
+    height: 550px;
     margin: 10px;
     padding: 1em 2em;
     border: none;
 }
 
+legend {
+    font-size: 1.25em;
+    padding: 1em
+}
+
 .center {
     position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -40%);
 }
 
 .center button {
@@ -66,8 +86,8 @@ fieldset {
 
 .pop-up {
     position: absolute;
-    top: -140%;
-    left: 50%;
+    top: 60%;
+    left: 70%;
     transform: translate(-50%) scale(1.25);
     width: 380px;
     padding: 20px 30px;
