@@ -20,8 +20,29 @@ body {
 }
 
 img {
-    height: 600px;
-    width: 300px;
+    height: 780px;
+    width: 450px;
+}
+
+.content p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.log {
+    color: #02dd65;
+}
+
+fieldset {
+    height: 500px;
+    margin: 10px;
+    padding: 1em 2em;
+    border: none;
 }
 
 .center {
@@ -32,27 +53,40 @@ img {
 }
 
 .center button {
+    background-color: #E5E7EB;
+    border: none;
+    border-radius: 5px;
+    color: #222;
+    cursor: pointer;
     padding: 10px 20px;
     font-size: 15px;
     font-weight: 600;
-    color: #222;
-    background-color: #023cdd;
-    border: none;
     outline: none;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 .pop-up {
     position: absolute;
-    top: 50%;
+    top: -140%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%) scale(1.25);
     width: 380px;
     padding: 20px 30px;
     background: #E5E7EB;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    opacity: 0;
+    transition:top 0ms ease-in-out 200ms,
+               opacity 0ms ease-in-out 0ms,
+               transform 0ms ease-in-out 0ms;
+}
+
+.pop-up.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 20ms ease-in-out 0ms;
 }
 
 .pop-up .close-btn {
@@ -70,8 +104,8 @@ img {
 
 .pop-up form .form-element {
     margin: 15px 0;
-    display: flex;
 }
+
 
 .pop-up form .form-element  label{
     font-size: 14px;
@@ -88,6 +122,7 @@ img {
     border-radius: 1rem;
     padding: 10px;
     line-height: 1.5;
+    width: 100%;
 }
 
 .pop-up form .form-element input:focus, input:valid {
@@ -98,4 +133,26 @@ img {
 .pop-up form .form-element input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color:#E5E7EB;
+    color: #023cdd;
+ }
+
+ .pop-up form button {
+    background-color: #023cdd;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    outline: none;
+    width: 100%;
+ }
+
+ footer {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    /* margin-top: 20px; */
  }

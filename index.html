@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/app.js"></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -14,46 +15,50 @@
         </div>
         <div class="content">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-            <p>Sign up <span>now</span> to get started.</p>
-            <p>You <span>know</span> you want to.</p>
+            <p>Sign up <span class="italic">now</span> to get started.</p>
+            <p>You <span class="italic">know</span> you want to.</p>
             <fieldset>
                 <legend>Let's do this!</legend>
                 <div class="center">
-                    <button>Sign-up</button>
+                    <button id="show-form">Sign-up</button>
                 </div>
                 <div class="pop-up">
                     <div class="close-btn">&times;</div>
                 <form action="#" method="post">
-                    <div class="form-element">
-                        <input type="text" name="First-name" id="first-name" required>
-                        <label for="first-name">First-name</label>
-                    </div>
-                    <div class="form-element">
-                        <input type="text" name="Last-name" id="last-name" required>
-                        <label for="last-name">Last-name</label>
-                    </div>
-                    <div class="form-element">
-                        <input type="email" name="email" id="email" required>
-                        <label for="email">Email</label>
-                    </div>                        <div class="form-element">
-                        <input type="text" name="phone-number" id="phone-number" required>
-                        <label for="phone-number">Phone Number</label>
-                    </div>
-                    <div class="form-element">
-                        <input type="password" name="password" id="password" required>
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="form-element">
-                        <input type="password" name="confirm-password" id="confirm-password" required>
-                        <label for="confirm-password">Conform Password</label>
-                    </div>
+                        <div class="form-element">
+                            <input type="text" name="First-name" id="first-name" required>
+                            <label for="first-name">First-name</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="text" name="Last-name" id="last-name" required>
+                            <label for="last-name">Last-name</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>                        
+                        <div class="form-element">
+                            <input type="text" name="phone-number" id="phone-number" required>
+                            <label for="phone-number">Phone Number</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="form-element">
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <label for="confirm-password">Confirm Password</label>
+                        </div>
+                        <button type="button">Create Account</button>
                 </form>
                 </div>
                 
             </fieldset>
-            <button type="button">Create Account</button>
-            <p>Alreadly have an account?<span>Log in</span></p>
+            <p>Already have an account?<span class="log"> Log in</span></p>
         </div>
     </div>
+    <footer>
+        Form design @2022 by jcullen
+    </footer>
 </body>
 </html>
